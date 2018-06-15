@@ -9,6 +9,7 @@ RUN a2enmod proxy_fcgi
 RUN a2enmod ssl
 RUN a2ensite default-ssl
 
+ENV PHPFPM_AUTHORITY php:9000
 COPY php-fpm.conf /etc/apache2/conf-available/php-fpm.conf
 RUN a2enconf php-fpm
 
