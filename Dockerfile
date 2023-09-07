@@ -1,4 +1,4 @@
-FROM ajgarlag/debian:bullseye
+FROM ajgarlag/debian:bookworm
 
 RUN apt-get update \
     && apt-get install -y \
